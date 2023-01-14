@@ -1,1 +1,30 @@
-Register
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<div class="container">
+
+    <form action="" method="post" style="background-color: whitesmoke; padding: 5%;">
+        <h1 class="text-center">Register</h1>
+        
+        {{form.username.label(class="mt-5") }}
+        {{form.username(class="form-control",placeholder="Username")}}
+
+        {{form.email_address.label(class="mt-5") }}
+        {{form.email_address(class="form-control",placeholder="Email")}}
+
+        {{form.password1.label(class="mt-5") }}
+        {{form.password1(class="form-control",placeholder="Password")}}
+
+        {{form.password2.label(class="mt-5") }}
+        {{form.password2(class="form-control",placeholder="Confirm Password")}}
+        
+        <div class="container text-center">{{form.submit(class="btn btn-primary mt-5 ms-auto")}}</div>
+        
+
+    </form>
+</div>
+
+{% endblock %}
