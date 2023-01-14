@@ -6,7 +6,8 @@
 
 <div class="container">
 
-    <form action="" method="post" style="background-color: whitesmoke; padding: 5%;">
+    <form method="post" style="background-color: whitesmoke; padding: 5%;">
+        {{ form.hidden_tag() }}
         <h1 class="text-center">Register</h1>
         
         {{form.username.label(class="mt-5") }}
